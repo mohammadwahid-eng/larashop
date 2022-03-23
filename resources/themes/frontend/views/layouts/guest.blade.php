@@ -27,13 +27,14 @@
 
                 <!--Body Content-->
                 <div id="page-content">
-                    <div class="page section-header text-center">
-                        <div class="page-title">
-                            <div class="wrapper">
-                                <h1 class="page-width">@yield('title', 'Title')</h1>
-                            </div>
+                    <!--Collection Banner-->
+                    <div class="collection-header">
+                        <div class="collection-hero">
+                            <div class="collection-hero__image"><img class="blur-up lazyload" data-src="{{ asset('themes/frontend/images/cat-women2.jpg') }}" src="{{ asset('themes/frontend/images/cat-women2.jpg') }}" alt="Women" title="Women" /></div>
+                            <div class="collection-hero__title-wrapper"><h1 class="collection-hero__title page-width">@yield('title', 'Title')</h1></div>
                         </div>
                     </div>
+                    <!--End Collection Banner-->
 
                     <div class="bredcrumbWrap">
                         <div class="container breadcrumbs">

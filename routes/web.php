@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['theme:frontend'])->group(function() {
     Route::view('/', 'home');
     Route::view('/shop', 'products.list.index')->name('shop');
+
+    Route::view('/products/view', 'products.view')->name('products.view');
+
     Route::view('/cart', 'cart.index')->name('cart');
     Route::view('/checkout', 'checkout.index')->name('checkout');
     Route::view('/compare', 'compare.index')->name('compare');
