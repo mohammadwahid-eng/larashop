@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return "Welcome";
+Route::middleware(['theme:frontend'])->group(function() {
+    Route::view('/', 'home');
 });
 
 
