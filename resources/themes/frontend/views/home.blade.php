@@ -1,3 +1,5 @@
-<x-guest-layout>
-    homepage
-</x-guest-layout>
+@extends('layouts.guest')
+
+@section('content')
+    Frontpage
+@endsection
